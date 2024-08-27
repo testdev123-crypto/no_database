@@ -10,6 +10,9 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 		System.out.println("hi");
 		System.out.println("hello");
+		for(int i=0;i<5;i++){
+			System.out.println("testing");
+		}
 	}
 
 }

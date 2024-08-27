@@ -31,7 +31,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ac835bcc836cc59f887e31cade3ea1f3251fc966
-        run: mvn sonar:sonar \
+        run: mvn clean verify sonar:sonar \
           -Dsonar.projectKey=testdev123-crypto_no_database \
           -Dsonar.organization=testdev123-crypto \
           -Dsonar.host.url=https://sonarcloud.io \
